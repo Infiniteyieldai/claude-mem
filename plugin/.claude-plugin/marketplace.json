@@ -1,0 +1,31 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-mem-skills",
+  "version": "1.0.0",
+  "description": "Skills from claude-mem plugin",
+  "owner": {
+    "name": "Infiniteyieldai"
+  },
+  "plugins": [
+    {
+      "name": "do",
+      "description": "Execute phased plans using subagents",
+      "source": "./skills/do"
+    },
+    {
+      "name": "make-plan",
+      "description": "Create phased implementation plans",
+      "source": "./skills/make-plan"
+    },
+    {
+      "name": "mem-search",
+      "description": "Search past work and memory",
+      "source": "./skills/mem-search"
+    },
+    {
+      "name": "smart-explore",
+      "description": "Smart codebase exploration",
+      "source": "./skills/smart-explore"
+    }
+  ]
+}
